@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <button class="header__burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <nav class="header__nav">
+                <ul class="header__nav-list text-medium">
+                    <li class="header__nav-item"><a href="#about">ABOUT US</a></li>
+                    <li class="header__nav-item"><a href="#gallery">GALLERY</a></li>
+                    <li class="header__nav-item"><a href="#services">Services</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn-cta" data-modal="modal_cta">
+                <span class="text-medium">Contact Us</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__scroll">
+                <span>SCROLL DOWN</span>
+                <img src="./assets/img/arrow-bottom.svg" alt="Arrow Bottom" />
+            </div>
+            <div class="hero__container container-large">
+                <div class="hero__content">
+                    <div class="section-header">
+                        <span class="text-xlarge">/ 01</span>
+                        <span class="text-large">/ Jaracz Residence V2</span>
+                    </div>
+                    <h2 class="hero__title">Innovative Home Design Solutions</h2>
+
+                    <div class="hero__details">
+                        <div class="hero__details-content">
+                            <p class="hero__details-text text-medium">
+                                Our cutting-edge architectural projects provide contemporary
+                                living spaces, offering seamless functionality and comfort.
+                            </p>
+
+                            <div class="hero__details-list">
+                                <div class="hero__details-item">
+                                    <span class="text-small">Check Our Projects</span>
+                                    <a href="#project">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="11"
+                                            viewBox="0 0 20 11" fill="none">
+                                            <path
+                                                d="M19.8678 4.70428L15.3225 0.158889C15.1592 -0.0317713 14.8722 -0.0539973 14.6816 0.10932C14.4909 0.272598 14.4687 0.559546 14.632 0.750207C14.6472 0.76798 14.6638 0.784581 14.6816 0.799776L18.4497 4.57244H0.454523C0.203512 4.57244 0 4.77596 0 5.02701C0 5.27806 0.203512 5.48153 0.454523 5.48153H18.4497L14.6816 9.24963C14.4909 9.4129 14.4687 9.69985 14.632 9.89051C14.7953 10.0812 15.0822 10.1034 15.2729 9.94008C15.2907 9.92485 15.3073 9.90829 15.3225 9.89051L19.8678 5.34513C20.0441 5.1679 20.0441 4.88158 19.8678 4.70428Z"
+                                                fill="#222222" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="hero__details-item">
+                                    <span>Check Our Interiors</span>
+                                    <a href="#gallery">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="11"
+                                            viewBox="0 0 20 11" fill="none">
+                                            <path
+                                                d="M19.8678 4.70428L15.3225 0.158889C15.1592 -0.0317713 14.8722 -0.0539973 14.6816 0.10932C14.4909 0.272598 14.4687 0.559546 14.632 0.750207C14.6472 0.76798 14.6638 0.784581 14.6816 0.799776L18.4497 4.57244H0.454523C0.203512 4.57244 0 4.77596 0 5.02701C0 5.27806 0.203512 5.48153 0.454523 5.48153H18.4497L14.6816 9.24963C14.4909 9.4129 14.4687 9.69985 14.632 9.89051C14.7953 10.0812 15.0822 10.1034 15.2729 9.94008C15.2907 9.92485 15.3073 9.90829 15.3225 9.89051L19.8678 5.34513C20.0441 5.1679 20.0441 4.88158 19.8678 4.70428Z"
+                                                fill="#222222" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__pagination">
+                            <div class="hero__pagination-item">
+                                <div class="hero__pagination-item-overlay"></div>
+                                <img src="./assets/img/pagination/pagination-1.webp" alt="house photo" />
+                            </div>
+                            <div class="hero__pagination-item">
+                                <div class="hero__pagination-item-overlay"></div>
+                                <img src="./assets/img/pagination/pagination-2.webp" alt="house photo" />
+                            </div>
+                            <div class="hero__pagination-item">
+                                <div class="hero__pagination-item-overlay"></div>
+                                <img src="./assets/img/pagination/pagination-3.webp" alt="house photo" />
+                            </div>
+                            <div class="hero__pagination-item">
+                                <div class="hero__pagination-item-overlay hero__pagination-item-overlay--active"></div>
+                                <img src="./assets/img/pagination/pagination-4.webp" alt="house photo" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__photo">
+                    <img src="./assets/img/pagination/hero-3.webp" alt="house photo" />
+                </div>
+            </div>
+        </section>
+
+        <section class="architectur" id="about">
+            <div class="architectur__container container-right-gap">
+                <div class="architectur__photo">
+                    <img src="./assets/img/architectur.webp" alt="photo man" />
+                </div>
+
+                <div class="architectur__info">
+                    <div class="architectur__info-main">
+                        <h2 class="architectur__title">
+                            Our studio is redefining the future of workspace architecture
+                        </h2>
+                        <p class="architectur__subtitle text-medium">
+                            We aim to create environments that inspire productivity and
+                            innovation, crafting designs that will stand the test of time.
+                        </p>
+                    </div>
+
+                    <div class="architectur__user">
+                        <div class="architectur__details">
+                            <span class="architectur__user-name text-medium">Michael Kensington</span>
+                            <span class="architectur__user-position text-medium">Founder & Lead Architect</span>
+                        </div>
+
+                        <div class="social social--architectur">
+                            <a href="" class="social-item">
+                                <img src="./assets/img/social/x.svg" alt="x icon" />
+                            </a>
+                            <a href="" class="social-item">
+                                <img src="./assets/img/social/facebook.svg" alt="facebook icon" />
+                            </a>
+                            <a href="" class="social-item">
+                                <img src="./assets/img/social/instagram.svg" alt="instagram icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="gallery__container container">
+                <div class="section-header">
+                    <span class="text-xlarge">/ Gallery</span>
+                </div>
+
+                <div class="gallery__header">
+                    <h2>Deliver an unforgettable design journey</h2>
+
+                    <p class="text-medium">
+                        Combining elegance and contemporary style, our creations blend
+                        minimalism with a welcoming atmosphere
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-large">
+                <div class="swiper swiper-galary">
+                    <div class="slider__header">
+                        <div class="slider__controls">
+                            <button class="slider-btn slider-btn--prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+                                    <g opacity="0.3">
+                                        <path
+                                            d="M20.1322 30.3451L24.6775 34.8905C24.8408 35.0811 25.1278 35.1034 25.3184 34.9401C25.5091 34.7768 25.5313 34.4898 25.368 34.2992C25.3528 34.2814 25.3362 34.2648 25.3184 34.2496L21.5503 30.4769L39.5455 30.4769C39.7965 30.4769 40 30.2734 40 30.0224C40 29.7713 39.7965 29.5678 39.5455 29.5678L21.5503 29.5678L25.3184 25.7998C25.5091 25.6365 25.5313 25.3495 25.368 25.1589C25.2047 24.9682 24.9178 24.946 24.7271 25.1093C24.7093 25.1245 24.6927 25.1411 24.6775 25.1589L20.1322 29.7043C19.9559 29.8815 19.9559 30.1678 20.1322 30.3451Z"
+                                            fill="#010101" />
+                                    </g>
+                                    <path
+                                        d="M2.05448 40.9109C4.57878 47.3763 9.26675 52.7663 15.3196 56.1627C21.3725 59.5591 28.4158 60.7516 35.2494 59.5372C42.0829 58.3227 48.284 54.7764 52.796 49.5024C57.308 44.2284 59.8517 37.5531 59.9937 30.6139C60.1358 23.6747 57.8673 16.9009 53.5749 11.4468C49.2825 5.99257 43.2318 2.19545 36.4536 0.702374C29.6754 -0.790703 22.5893 0.112644 16.4025 3.2585C10.2157 6.40436 5.3111 11.5981 2.52436 17.9547L3.26538 18.2796C5.97697 12.0944 10.7493 7.04074 16.7692 3.97973C22.7891 0.91872 29.6842 0.0397339 36.2796 1.49254C42.8749 2.94535 48.7625 6.64006 52.9391 11.9471C57.1157 17.2542 59.323 23.8453 59.1848 30.5974C59.0466 37.3494 56.5715 43.8447 52.1812 48.9764C47.7909 54.1081 41.7571 57.5588 35.1078 58.7405C28.4585 59.9222 21.6052 58.7619 15.7156 55.4571C9.82594 52.1523 5.2644 46.9076 2.80819 40.6166L2.05448 40.9109Z"
+                                        fill="#010101" fill-opacity="0.3" />
+                                </svg>
+                            </button>
+                            <button class="slider-btn slider-btn--next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+                                    <path
+                                        d="M39.8678 29.7043L35.3225 25.1589C35.1592 24.9682 34.8722 24.946 34.6816 25.1093C34.4909 25.2726 34.4687 25.5595 34.632 25.7502C34.6472 25.768 34.6638 25.7846 34.6816 25.7998L38.4497 29.5724H20.4545C20.2035 29.5724 20 29.776 20 30.027C20 30.2781 20.2035 30.4815 20.4545 30.4815H38.4497L34.6816 34.2496C34.4909 34.4129 34.4687 34.6999 34.632 34.8905C34.7953 35.0812 35.0822 35.1034 35.2729 34.9401C35.2907 34.9248 35.3073 34.9083 35.3225 34.8905L39.8678 30.3451C40.0441 30.1679 40.0441 29.8816 39.8678 29.7043Z"
+                                        fill="#222222" />
+                                    <path
+                                        d="M57.9455 19.0891C55.4212 12.6237 50.7332 7.23368 44.6804 3.8373C38.6275 0.440921 31.5842 -0.751634 24.7506 0.462833C17.9171 1.6773 11.716 5.22365 7.20401 10.4976C2.69203 15.7716 0.148316 22.4469 0.00628231 29.3861C-0.135752 36.3253 2.13268 43.0991 6.42508 48.5532C10.7175 54.0074 16.7682 57.8046 23.5464 59.2976C30.3246 60.7907 37.4107 59.8874 43.5975 56.7415C49.7843 53.5956 54.6889 48.4019 57.4756 42.0453L56.7346 41.7204C54.023 47.9056 49.2507 52.9593 43.2308 56.0203C37.2109 59.0813 30.3158 59.9603 23.7204 58.5075C17.1251 57.0546 11.2375 53.3599 7.0609 48.0529C2.88428 42.7458 0.677022 36.1547 0.815225 29.4026C0.953429 22.6506 3.42854 16.1553 7.81883 11.0236C12.2091 5.89188 18.2429 2.44118 24.8922 1.25946C31.5415 0.0777505 38.3948 1.23814 44.2844 4.54292C50.1741 7.8477 54.7356 13.0924 57.1918 19.3834L57.9455 19.0891Z"
+                                        fill="#222222" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-id-slide="1">
+                            <img src="./assets/img/slider/slide-1.webp" alt="house photo" />
+
+                            <div class="swiper-slide__info">
+                                <h6 class="text-small">The Kensington Residence</h6>
+                                <p class="text-small">
+                                    This modern family home is a stunning example of
+                                    sophisticated and minimalist design principles
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-id-slide="2">
+                            <img src="./assets/img/slider/slide-2.webp" alt="house photo" />
+
+                            <div class="swiper-slide__info">
+                                <h6 class="text-small">The Kensington Residence</h6>
+                                <p class="text-small">
+                                    This modern family home is a stunning example of
+                                    sophisticated and minimalist design principles
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-id-slide="3">
+                            <img src="./assets/img/slider/slide-3.webp" alt="house photo" />
+
+                            <div class="swiper-slide__info">
+                                <h6 class="text-small">The Kensington Residence</h6>
+                                <p class="text-small">
+                                    This modern family home is a stunning example of
+                                    sophisticated and minimalist design principles
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-id-slide="4">
+                            <img src="./assets/img/slider/slide-4.webp" alt="house photo" />
+
+                            <div class="swiper-slide__info">
+                                <h6 class="text-small">The Kensington Residence</h6>
+                                <p class="text-small">
+                                    This modern family home is a stunning example of
+                                    sophisticated and minimalist design principles
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-id-slide="5">
+                            <img src="./assets/img/slider/slide-5.webp" alt="house photo" />
+
+                            <div class="swiper-slide__info">
+                                <h6 class="text-small">The Kensington Residence</h6>
+                                <p class="text-small">
+                                    This modern family home is a stunning example of
+                                    sophisticated and minimalist design principles
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-id-slide="6">
+                            <img src="./assets/img/slider/slide-6.webp" alt="house photo" />
+
+                            <div class="swiper-slide__info">
+                                <h6 class="text-small">The Kensington Residence</h6>
+                                <p class="text-small">
+                                    This modern family home is a stunning example of
+                                    sophisticated and minimalist design principles
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-id-slide="7">
+                            <img src="./assets/img/slider/slide-7.webp" alt="house photo" />
+
+                            <div class="swiper-slide__info">
+                                <h6 class="text-small">The Kensington Residence</h6>
+                                <p class="text-small">
+                                    This modern family home is a stunning example of
+                                    sophisticated and minimalist design principles
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-id-slide="8">
+                            <img src="./assets/img/slider/slide-8.webp" alt="house photo" />
+
+                            <div class="swiper-slide__info">
+                                <h6 class="text-small">The Kensington Residence</h6>
+                                <p class="text-small">
+                                    This modern family home is a stunning example of
+                                    sophisticated and minimalist design principles
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="services__container container">
+                <div class="section-header">
+                    <span class="text-xlarge">/ Services</span>
+                </div>
+            </div>
+
+            <div class="services__list">
+                <div class="services__item">
+                    <div class="services__item-inner container">
+                        <div class="services__number">
+                            <p class="text-xxlarge">01</p>
+                        </div>
+                        <div class="services__main">
+                            <h3 class="text-xxlarge">Modular vacation homes</h3>
+                            <p>
+                                We design and build modular vacation homes tailored to your needs. These homes combine style with functionality and are quick to assemble. Perfect for a hassle-free retreat
+                            </p>
+                        </div>
+                        <button class="services__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16"
+                                fill="none">
+                                <path
+                                    d="M1.84619 9.84612L15.0067 9.84612L12.0049 12.8479C11.6586 13.1941 11.464 13.6636 11.4639 14.1533C11.4638 14.643 11.6582 15.1126 12.0043 15.4589C12.3505 15.8053 12.82 15.9999 13.3097 16C13.7994 16.0001 14.269 15.8057 14.6154 15.4595L19.0288 11.0461C19.8352 10.2375 20.2881 9.14203 20.2881 8C20.2881 6.85797 19.8352 5.76255 19.0288 4.95391L14.6154 0.540453C14.269 0.194291 13.7994 -0.000116348 13.3097 0C12.82 0.000115395 12.3505 0.194745 12.0043 0.54107C11.6582 0.887395 11.4638 1.35705 11.4639 1.84671C11.464 2.33637 11.6586 2.80593 12.0049 3.15209L15.0067 6.15388L1.84619 6.15388C1.35657 6.15388 0.887005 6.34838 0.540791 6.6946C0.194576 7.04081 7.24792e-05 7.51038 7.24792e-05 8C7.24792e-05 8.48962 0.194576 8.95919 0.540791 9.3054C0.887005 9.65162 1.35657 9.84612 1.84619 9.84612Z"
+                                    fill="#222222" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-inner container">
+                        <div class="services__number">
+                            <p class="text-xxlarge">02</p>
+                        </div>
+                        <div class="services__main">
+                            <h3 class="text-xxlarge">Eco-friendly wooden houses</h3>
+                            <p>
+                                Our eco-friendly wooden homes are crafted from sustainable materials. They provide year-round comfort while reducing environmental impact. Ideal for those seeking green living solutions
+                            </p>
+                        </div>
+                        <button class="services__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16"
+                                fill="none">
+                                <path
+                                    d="M1.84619 9.84612L15.0067 9.84612L12.0049 12.8479C11.6586 13.1941 11.464 13.6636 11.4639 14.1533C11.4638 14.643 11.6582 15.1126 12.0043 15.4589C12.3505 15.8053 12.82 15.9999 13.3097 16C13.7994 16.0001 14.269 15.8057 14.6154 15.4595L19.0288 11.0461C19.8352 10.2375 20.2881 9.14203 20.2881 8C20.2881 6.85797 19.8352 5.76255 19.0288 4.95391L14.6154 0.540453C14.269 0.194291 13.7994 -0.000116348 13.3097 0C12.82 0.000115395 12.3505 0.194745 12.0043 0.54107C11.6582 0.887395 11.4638 1.35705 11.4639 1.84671C11.464 2.33637 11.6586 2.80593 12.0049 3.15209L15.0067 6.15388L1.84619 6.15388C1.35657 6.15388 0.887005 6.34838 0.540791 6.6946C0.194576 7.04081 7.24792e-05 7.51038 7.24792e-05 8C7.24792e-05 8.48962 0.194576 8.95919 0.540791 9.3054C0.887005 9.65162 1.35657 9.84612 1.84619 9.84612Z"
+                                    fill="#222222" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-inner container">
+                        <div class="services__number">
+                            <p class="text-xxlarge">03</p>
+                        </div>
+                        <div class="services__main">
+                            <h3 class="text-xxlarge">Custom garden houses</h3>
+                            <p>
+                                Enhance your outdoor space with a custom garden house. Built to fit your landscape and aesthetic, these houses are versatile for storage or leisure. Durable and designed to withstand all weather conditions
+                            </p>
+                        </div>
+                        <button class="services__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16"
+                                fill="none">
+                                <path
+                                    d="M1.84619 9.84612L15.0067 9.84612L12.0049 12.8479C11.6586 13.1941 11.464 13.6636 11.4639 14.1533C11.4638 14.643 11.6582 15.1126 12.0043 15.4589C12.3505 15.8053 12.82 15.9999 13.3097 16C13.7994 16.0001 14.269 15.8057 14.6154 15.4595L19.0288 11.0461C19.8352 10.2375 20.2881 9.14203 20.2881 8C20.2881 6.85797 19.8352 5.76255 19.0288 4.95391L14.6154 0.540453C14.269 0.194291 13.7994 -0.000116348 13.3097 0C12.82 0.000115395 12.3505 0.194745 12.0043 0.54107C11.6582 0.887395 11.4638 1.35705 11.4639 1.84671C11.464 2.33637 11.6586 2.80593 12.0049 3.15209L15.0067 6.15388L1.84619 6.15388C1.35657 6.15388 0.887005 6.34838 0.540791 6.6946C0.194576 7.04081 7.24792e-05 7.51038 7.24792e-05 8C7.24792e-05 8.48962 0.194576 8.95919 0.540791 9.3054C0.887005 9.65162 1.35657 9.84612 1.84619 9.84612Z"
+                                    fill="#222222" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-inner container">
+                        <div class="services__number">
+                            <p class="text-xxlarge">04</p>
+                        </div>
+                        <div class="services__main">
+                            <h3 class="text-xxlarge">Wooden garages</h3>
+                            <p>
+                                We offer beautifully crafted wooden garages to protect your vehicles. These garages are durable, customizable, and eco-friendly. A perfect addition to your property with natural aesthetics
+                            </p>
+                        </div>
+                        <button class="services__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16"
+                                fill="none">
+                                <path
+                                    d="M1.84619 9.84612L15.0067 9.84612L12.0049 12.8479C11.6586 13.1941 11.464 13.6636 11.4639 14.1533C11.4638 14.643 11.6582 15.1126 12.0043 15.4589C12.3505 15.8053 12.82 15.9999 13.3097 16C13.7994 16.0001 14.269 15.8057 14.6154 15.4595L19.0288 11.0461C19.8352 10.2375 20.2881 9.14203 20.2881 8C20.2881 6.85797 19.8352 5.76255 19.0288 4.95391L14.6154 0.540453C14.269 0.194291 13.7994 -0.000116348 13.3097 0C12.82 0.000115395 12.3505 0.194745 12.0043 0.54107C11.6582 0.887395 11.4638 1.35705 11.4639 1.84671C11.464 2.33637 11.6586 2.80593 12.0049 3.15209L15.0067 6.15388L1.84619 6.15388C1.35657 6.15388 0.887005 6.34838 0.540791 6.6946C0.194576 7.04081 7.24792e-05 7.51038 7.24792e-05 8C7.24792e-05 8.48962 0.194576 8.95919 0.540791 9.3054C0.887005 9.65162 1.35657 9.84612 1.84619 9.84612Z"
+                                    fill="#222222" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-inner container">
+                        <div class="services__number">
+                            <p class="text-xxlarge">05</p>
+                        </div>
+                        <div class="services__main">
+                            <h3 class="text-xxlarge">Wooden carports</h3>
+                            <p>
+                                Our wooden carports provide stylish protection for your vehicles. Designed to complement your home, they are durable and eco-friendly. Customizable to fit your specific needs
+                            </p>
+                        </div>
+                        <button class="services__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16"
+                                fill="none">
+                                <path
+                                    d="M1.84619 9.84612L15.0067 9.84612L12.0049 12.8479C11.6586 13.1941 11.464 13.6636 11.4639 14.1533C11.4638 14.643 11.6582 15.1126 12.0043 15.4589C12.3505 15.8053 12.82 15.9999 13.3097 16C13.7994 16.0001 14.269 15.8057 14.6154 15.4595L19.0288 11.0461C19.8352 10.2375 20.2881 9.14203 20.2881 8C20.2881 6.85797 19.8352 5.76255 19.0288 4.95391L14.6154 0.540453C14.269 0.194291 13.7994 -0.000116348 13.3097 0C12.82 0.000115395 12.3505 0.194745 12.0043 0.54107C11.6582 0.887395 11.4638 1.35705 11.4639 1.84671C11.464 2.33637 11.6586 2.80593 12.0049 3.15209L15.0067 6.15388L1.84619 6.15388C1.35657 6.15388 0.887005 6.34838 0.540791 6.6946C0.194576 7.04081 7.24792e-05 7.51038 7.24792e-05 8C7.24792e-05 8.48962 0.194576 8.95919 0.540791 9.3054C0.887005 9.65162 1.35657 9.84612 1.84619 9.84612Z"
+                                    fill="#222222" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-inner container">
+                        <div class="services__number">
+                            <p class="text-xxlarge">06</p>
+                        </div>
+                        <div class="services__main">
+                            <h3 class="text-xxlarge">Consultation for eco-construction</h3>
+                            <p>
+                                Get expert advice on building eco-friendly homes and structures. Our consultation services focus on sustainability and energy efficiency. We guide you through every step of your eco-construction project
+                            </p>
+                        </div>
+                        <button class="services__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16"
+                                fill="none">
+                                <path
+                                    d="M1.84619 9.84612L15.0067 9.84612L12.0049 12.8479C11.6586 13.1941 11.464 13.6636 11.4639 14.1533C11.4638 14.643 11.6582 15.1126 12.0043 15.4589C12.3505 15.8053 12.82 15.9999 13.3097 16C13.7994 16.0001 14.269 15.8057 14.6154 15.4595L19.0288 11.0461C19.8352 10.2375 20.2881 9.14203 20.2881 8C20.2881 6.85797 19.8352 5.76255 19.0288 4.95391L14.6154 0.540453C14.269 0.194291 13.7994 -0.000116348 13.3097 0C12.82 0.000115395 12.3505 0.194745 12.0043 0.54107C11.6582 0.887395 11.4638 1.35705 11.4639 1.84671C11.464 2.33637 11.6586 2.80593 12.0049 3.15209L15.0067 6.15388L1.84619 6.15388C1.35657 6.15388 0.887005 6.34838 0.540791 6.6946C0.194576 7.04081 7.24792e-05 7.51038 7.24792e-05 8C7.24792e-05 8.48962 0.194576 8.95919 0.540791 9.3054C0.887005 9.65162 1.35657 9.84612 1.84619 9.84612Z"
+                                    fill="#222222" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+        <section class="project" id="project">
+            <div class="project__container container">
+                <div class="section-header">
+                    <span class="text-xlarge">/ Project</span>
+                </div>
+
+                <div class="gallery__header">
+                    <h2>We approach each project with enthusiasm</h2>
+                </div>
+            </div>
+
+            <div class="swiper swiper-project">
+                <div class="container">
+                    <div class="slider__header">
+                        <button class="btn-cta" data-modal="modal_cta">
+                            <span class="text-medium">Contact Us</span>
+                        </button>
+                        <div class="slider__controls">
+                            <button class="slider-btn slider-btn--prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+                                    <g opacity="0.3">
+                                        <path
+                                            d="M20.1322 30.3451L24.6775 34.8905C24.8408 35.0811 25.1278 35.1034 25.3184 34.9401C25.5091 34.7768 25.5313 34.4898 25.368 34.2992C25.3528 34.2814 25.3362 34.2648 25.3184 34.2496L21.5503 30.4769L39.5455 30.4769C39.7965 30.4769 40 30.2734 40 30.0224C40 29.7713 39.7965 29.5678 39.5455 29.5678L21.5503 29.5678L25.3184 25.7998C25.5091 25.6365 25.5313 25.3495 25.368 25.1589C25.2047 24.9682 24.9178 24.946 24.7271 25.1093C24.7093 25.1245 24.6927 25.1411 24.6775 25.1589L20.1322 29.7043C19.9559 29.8815 19.9559 30.1678 20.1322 30.3451Z"
+                                            fill="#010101" />
+                                    </g>
+                                    <path
+                                        d="M2.05448 40.9109C4.57878 47.3763 9.26675 52.7663 15.3196 56.1627C21.3725 59.5591 28.4158 60.7516 35.2494 59.5372C42.0829 58.3227 48.284 54.7764 52.796 49.5024C57.308 44.2284 59.8517 37.5531 59.9937 30.6139C60.1358 23.6747 57.8673 16.9009 53.5749 11.4468C49.2825 5.99257 43.2318 2.19545 36.4536 0.702374C29.6754 -0.790703 22.5893 0.112644 16.4025 3.2585C10.2157 6.40436 5.3111 11.5981 2.52436 17.9547L3.26538 18.2796C5.97697 12.0944 10.7493 7.04074 16.7692 3.97973C22.7891 0.91872 29.6842 0.0397339 36.2796 1.49254C42.8749 2.94535 48.7625 6.64006 52.9391 11.9471C57.1157 17.2542 59.323 23.8453 59.1848 30.5974C59.0466 37.3494 56.5715 43.8447 52.1812 48.9764C47.7909 54.1081 41.7571 57.5588 35.1078 58.7405C28.4585 59.9222 21.6052 58.7619 15.7156 55.4571C9.82594 52.1523 5.2644 46.9076 2.80819 40.6166L2.05448 40.9109Z"
+                                        fill="#010101" fill-opacity="0.3" />
+                                </svg>
+                            </button>
+                            <button class="slider-btn slider-btn--next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+                                    <path
+                                        d="M39.8678 29.7043L35.3225 25.1589C35.1592 24.9682 34.8722 24.946 34.6816 25.1093C34.4909 25.2726 34.4687 25.5595 34.632 25.7502C34.6472 25.768 34.6638 25.7846 34.6816 25.7998L38.4497 29.5724H20.4545C20.2035 29.5724 20 29.776 20 30.027C20 30.2781 20.2035 30.4815 20.4545 30.4815H38.4497L34.6816 34.2496C34.4909 34.4129 34.4687 34.6999 34.632 34.8905C34.7953 35.0812 35.0822 35.1034 35.2729 34.9401C35.2907 34.9248 35.3073 34.9083 35.3225 34.8905L39.8678 30.3451C40.0441 30.1679 40.0441 29.8816 39.8678 29.7043Z"
+                                        fill="#222222" />
+                                    <path
+                                        d="M57.9455 19.0891C55.4212 12.6237 50.7332 7.23368 44.6804 3.8373C38.6275 0.440921 31.5842 -0.751634 24.7506 0.462833C17.9171 1.6773 11.716 5.22365 7.20401 10.4976C2.69203 15.7716 0.148316 22.4469 0.00628231 29.3861C-0.135752 36.3253 2.13268 43.0991 6.42508 48.5532C10.7175 54.0074 16.7682 57.8046 23.5464 59.2976C30.3246 60.7907 37.4107 59.8874 43.5975 56.7415C49.7843 53.5956 54.6889 48.4019 57.4756 42.0453L56.7346 41.7204C54.023 47.9056 49.2507 52.9593 43.2308 56.0203C37.2109 59.0813 30.3158 59.9603 23.7204 58.5075C17.1251 57.0546 11.2375 53.3599 7.0609 48.0529C2.88428 42.7458 0.677022 36.1547 0.815225 29.4026C0.953429 22.6506 3.42854 16.1553 7.81883 11.0236C12.2091 5.89188 18.2429 2.44118 24.8922 1.25946C31.5415 0.0777505 38.3948 1.23814 44.2844 4.54292C50.1741 7.8477 54.7356 13.0924 57.1918 19.3834L57.9455 19.0891Z"
+                                        fill="#222222" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/project/project-1.webp" alt="house photo" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/project/project-2.webp" alt="house photo" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/project/project-3.webp" alt="house photo" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/project/project-4.webp" alt="house photo" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/project/project-5.webp" alt="house photo" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/project/project-6.webp" alt="house photo" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="update">
+            <div class="update__container container">
+                <div class="update__main">
+                    <h2 class="update__title">Stay Updated</h2>
+
+                    <form id="form-mail" action="" method="">
+                        <input type="text" name="email" class="text-large" placeholder="Enter Your Email" />
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#B6B6B6" />
+                                <path
+                                    d="M29.8678 19.7043L25.3225 15.1589C25.1592 14.9682 24.8722 14.946 24.6816 15.1093C24.4909 15.2726 24.4687 15.5595 24.632 15.7502C24.6472 15.768 24.6638 15.7846 24.6816 15.7998L28.4497 19.5724H10.4545C10.2035 19.5724 10 19.776 10 20.027C10 20.2781 10.2035 20.4815 10.4545 20.4815H28.4497L24.6816 24.2496C24.4909 24.4129 24.4687 24.6999 24.632 24.8905C24.7953 25.0812 25.0822 25.1034 25.2729 24.9401C25.2907 24.9248 25.3073 24.9083 25.3225 24.8905L29.8678 20.3451C30.0441 20.1679 30.0441 19.8816 29.8678 19.7043Z"
+                                    fill="#B6B6B6" />
+                            </svg>
+                        </button>
+                    </form>
+
+                    <p class="update__txt text-medium">
+                        Join our newsletter to receive the latest design insights and
+                        innovative solutions directly to your inbox. We’re committed to
+                        offering high-quality design tips and updates to keep you inspired
+                    </p>
+                </div>
+
+                <div class="social social--update">
+                    <a href="" class="social-item">
+                        <img src="./assets/img/social/x.svg" alt="x icon" />
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/img/social/facebook.svg" alt="facebook icon" />
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/img/social/instagram.svg" alt="instagram icon" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__container container">
+            <div class="footer__main">
+                <nav class="footer__nav">
+                    <ul class="footer__list text-small">
+                        <li class="footer__item"><a href="">Privacy Policy</a></li>
+                        <li class="footer__item"><a href="">Terms & Conditions</a></li>
+                    </ul>
+                </nav>
+
+                <p class="footer__txt text-medium">
+                    © 2024 RELIABLE INSURANCE. All Rights Reserved.
+                </p>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="text-small">
+                    Developed by
+                    <a href="https://garno.tech/" target="_blank">GARNO.TECH</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal modal--cta">
+        <div class="modal-inner">
+            <div class="modal__header">
+                <h2>Contact us</h2>
+                <button class="btn__modal-close">
+                    <img src="./assets/img/close.svg" alt="close icon" />
+                </button>
+            </div>
+
+            <div class="modal--cta__main">
+                <div class="modal__contact">
+                    <div class="social social--modal">
+                        <a href="" class="social-item">
+                            <img src="./assets/img/social/x.svg" alt="x icon" />
+                        </a>
+                        <a href="" class="social-item">
+                            <img src="./assets/img/social/facebook.svg" alt="facebook icon" />
+                        </a>
+                        <a href="" class="social-item">
+                            <img src="./assets/img/social/instagram.svg" alt="instagram icon" />
+                        </a>
+                    </div>
+
+                    <div class="modal__contact-list text-large">
+                        <div class="modal__contact-item">
+                            <img src="./assets/img/contact/location.svg" alt="location icon" />
+                            <span>Unit 12, Al Habtoor Business Tower, Dubai Marina, Dubai,
+                                UAE</span>
+                        </div>
+                        <div class="modal__contact-item">
+                            <img src="./assets/img/contact/mail.svg" alt="mail icon" />
+                            <span>office@GreenArchDXB.com</span>
+                        </div>
+                        <div class="modal__contact-item">
+                            <img src="./assets/img/contact/phone.svg" alt="phone icon" />
+                            <span>+971 4 567 8901</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__form-wrapper">
+                    <form action="" id="form-modal" class="modal__form">
+                        <div class="form__field">
+                            <span class="form__field-title text-medium">Your name</span>
+                            <input type="text" name="name" class="text-medium" />
+                        </div>
+                        <div class="form__field">
+                            <span class="form__field-title text-medium">Phone</span>
+                            <input type="text" name="phone" class="text-medium" />
+                        </div>
+                        <div class="form__field">
+                            <span class="form__field-title text-medium">Message</span>
+                            <textarea name="message" id="" cols="30" rows="10" class="text-medium"></textarea>
+                        </div>
+
+                        <button class="btn-cta">
+                            <span class="text-medium">Send</span>
+                            <img src="./assets/img/arrow.svg" alt="arrow icon" />
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/content.js"></script>
+</body>
+
+</html>
